@@ -1,14 +1,24 @@
 import Hosts from "./components/hosts";
+import HostsInput from "./components/input";
 import { useHostsStore } from "./utils/stores";
 
 function App() {
-  const hosts = useHostsStore((state) => state.hosts);
-
   return (
-    <main className="flex flex-col items-center gap-8 m-4 min-h-screen w-screen">
-      <h1 className="font-bold text-6xl p-4">Open Graph Metadata</h1>
-      <Hosts hosts={hosts} />
+    <main className="flex flex-col items-center gap-8 p-4 min-h-screen w-screen">
+      <h1 className="font-bold text-6xl m-4">Open Graph Helper</h1>
+      <HostsInput />
+      <Hosts />
+      <Reset />
     </main>
+  );
+}
+
+function Reset() {
+  const resetHosts = useHostsStore((state) => state.resetHosts);
+  return (
+    <button className="btn btn-outline btn-error" onClick={() => resetHosts()}>
+      Reset
+    </button>
   );
 }
 

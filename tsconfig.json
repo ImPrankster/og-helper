@@ -21,21 +21,8 @@
     "moduleResolution": "Bundler",
     "jsx": "preserve",
     "plugins": [{ "name": "next" }],
-    "incremental": true,
-
-    /* Path Aliases */
-    "baseUrl": ".",
-    "paths": {
-      "~/*": ["./src/*"]
-    }
+    "incremental": true
   },
-  "include": [
-    ".eslintrc.cjs",
-    "**/*.ts",
-    "**/*.tsx",
-    "**/*.cjs",
-    "**/*.js",
-    ".next/types/**/*.ts"
-  ],
+  "include": [".eslintrc.cjs", "**/*.ts", "**/*.tsx", "**/*.cjs", "**/*.js"],
   "exclude": ["node_modules"]
 }
