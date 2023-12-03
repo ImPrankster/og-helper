@@ -24,6 +24,6 @@ export const useHostsStore = create<HostsStore>()(
     }),
     {
       name: "hosts",
-    }
-  )
+    },
+  ),
 );

@@ -1,6 +1,7 @@
+import { useAutoAnimate } from "@formkit/auto-animate/react";
+
 import { useHostsStore } from "../utils/stores";
 import Card from "./card";
-import { useAutoAnimate } from "@formkit/auto-animate/react";
 
 export default function Hosts() {
   const hosts = useHostsStore((state) => state.hosts);
@@ -8,7 +9,7 @@ export default function Hosts() {
 
   return (
     <section
-      className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 max-w-screen-xl"
+      className="grid max-w-screen-xl grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3"
       ref={parent}
     >
       {hosts.map((host, i) => (

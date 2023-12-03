@@ -1,30 +1,17 @@
-# React + TypeScript + Vite
+# OG Helper
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+og-helper is a simple tool to help you debug the Open Graph meta tags of a website.
 
-Currently, two official plugins are available:
+## How to use?
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Visit [og.leow.io](https://og.leow.io/) and enter the URL of the website you want to debug.
 
-## Expanding the ESLint configuration
+## How to run locally?
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+1. Clone this repository
+2. Install dependencies: `pnpm install`
+3. Run the development server: `pnpm dev`
 
-- Configure the top-level `parserOptions` property like this:
+## Built with
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: "latest",
-    sourceType: "module",
-    project: ["./tsconfig.json", "./tsconfig.node.json"],
-    tsconfigRootDir: __dirname,
-  },
-};
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+[open-graph-scraper-lite](https://github.com/jshemas/openGraphScraperLite) | [Vite](https://vitejs.dev/) | [Tailwind CSS](https://tailwindcss.com/) | [DaisyUI](https://daisyui.com/)
