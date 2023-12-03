@@ -1,5 +1,7 @@
 # OG Helper
 
+![OG Helper](/public/og.jpeg)
+
 og-helper is a simple tool to help you debug the Open Graph meta tags of a website.
 
 ## How to use?
