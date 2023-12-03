@@ -13,6 +13,7 @@ const Card = ({ host, index }: { host: string; index: number }) => {
   const query = useQuery({
     queryKey: ["og", host],
     queryFn: () => getOgData(host),
+    refetchInterval: 1000 * 60 * 10,
   });
 
   if (query.isLoading) {
